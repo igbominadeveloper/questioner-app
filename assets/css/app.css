@@ -1,0 +1,447 @@
+body{
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: hsl(200, 16%, 16%);
+	margin: 0;
+	background-color: #f6f7f8;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	background: teal;
+}
+
+ul {
+	list-style: none;
+}
+
+h2,h3{
+	font-weight: lighter;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	/*font-weight: bold;*/
+}
+p {
+	margin: 0;
+}
+article {
+	padding: 10px 20px 20px 20px;
+}
+textarea {
+	min-width: 100%;
+	max-width: 100%;
+}
+table {
+	width: 100%;
+}
+footer {
+	background:rgb(240, 240, 240);
+	font-size: 20px;
+	align-items: center;
+  justify-content: space-around;
+	text-align: left;
+	margin-top:60px;
+}
+
+div.footer-groups p {
+	padding-top: 16px;
+}
+
+.footer-group-title {
+	padding-top: 10px; 
+	color: black;
+	font-weight: 500;
+}
+
+.footer-groups a {
+	color: black
+}
+
+.footer-groups p {
+	font-size: 15px;
+}
+footer div.links {
+	width: 66%;
+}
+footer div.logo {
+	width: 34%;
+	text-align: center;
+}
+.footer-content {
+	padding: 30px 20px;
+}
+
+.copyright {
+	font-size: 17px;
+}
+.copyright p > a.github {
+	text-decoration-line: underline;
+}
+
+.container {
+	max-width: 900px;
+	margin: 20px auto; 
+} 
+
+.container-fluid {
+	width: 100%;
+}
+
+.br-5{
+	border-radius: 5px;
+}
+
+.shadow {
+	border-radius: 3px;
+	box-shadow: 6px 1px 35px rgba(0,0,0,0.18);
+}
+
+.card {
+	border-radius: 3px;
+	box-shadow: 6px 1px 35px rgba(0,0,0,0.18);
+	background: white;
+}
+
+/* Navbar */
+.nav-links {
+	width: 300px;
+	margin: 2px 20px;
+}
+.nav-links > ul{
+	display: flex;
+	justify-content: space-between;
+}
+nav h3, nav a, nav h2 {
+	color: white;
+}
+
+.navbar-collapse {
+	margin-top: -20px;
+	display: none;
+}
+
+.nav-mobile-parent{
+	display: none;
+	padding: 13px 5px 0px 5px;
+}
+
+.nav-mobile-parent a > p {
+	margin-top: -5px;
+}
+
+
+
+/* Buttons */
+.btn-primary {
+	cursor: pointer;
+	background: teal;
+	color: white;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+#nav-toggle{
+	background: url('../images/hambuger.png');
+	background-size: 19px 14px;
+	height: 28px;
+	width: 48px;
+}
+
+
+.page-title {
+	text-align: left;
+	color: black;
+	padding-left:35px;
+}
+
+/* Meetups */
+.meetup-wrapper {
+	margin: 10px auto;
+ max-width: 1500px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.meetup-header {
+	max-width: 100%;
+	background: white;
+	padding: 18px 20px;
+	margin-bottom: 40px;
+}
+
+.single-meetup {
+	text-align: left;
+}
+
+.single-meetup-image {
+	width: 500px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px
+}
+
+.meetup-image {
+	width: 100%;
+	height: 150px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.meetup-body {
+	width: 900px;
+	margin: 10px auto;
+}
+
+.meetup-body .wrapper {
+	height: 280px;
+}
+
+.meetup-description,.meetup-stats {
+	background: white;
+}
+
+.meetup-stats {
+	height: inherit;
+	margin:auto;
+}
+
+.meetup-title {
+	font-weight: bold;
+	font-size: 17px;
+	margin: 5px;
+}
+
+.meetup-date, .meetup-location {
+	margin: 5px;
+}
+
+.meetup-date p, .meetup-location p {
+	font-size: 20px;
+}
+
+
+.meetups-list {
+	height: inherit;
+	width: 100%;
+}
+
+.meetups-list td {
+	height: 40px;
+	width: 220px;
+}
+
+.meetups-list tr {
+	padding: 20px auto;
+}
+
+.meetups-list tr:hover {
+	font-weight: 600;
+}
+
+form input[type="search"] {
+	width: 20%;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	justify-self: center;
+}
+
+
+.question {
+	margin: 20px auto;
+	padding: 5px;
+}
+
+.questions-body {
+	background: white;
+}
+
+.question-stats {
+	width: 150px;
+}
+
+.question-feed {
+	max-width: 682px;
+}
+
+.question-stats > p:hover {
+	cursor: pointer;
+	font-weight: 300;
+}
+
+.question-comments {
+	display: none;
+	margin: 10px 0 10px 50px;
+	border-left: 1px solid teal;
+}
+
+.organizer {
+	display: flex;
+}
+
+#gdg {
+	background: url('../images/gdg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#vue{
+	background: url('../images/meetup-logo.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#laravel {
+	background: url('../images/laravel.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#mocha {
+	background: url('../images/mocha.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#forloop {
+	background: url('../images/forloop.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.text-light{
+	font-weight: lighter;
+}
+
+.text-heavy{
+	font-weight: bold;
+}
+
+i{
+ margin-right: 5px; 
+ color:grey;
+}
+
+.meetup {
+	border-radius: 5px;
+	width: 250px;
+	margin: 13px;
+}
+
+.meetup:hover {
+	cursor: pointer;
+	transition-duration: .3s;
+	transition-property: margin-top;
+	margin-top: 10px;
+}
+.question-content > p,.comment-content > p{
+	text-align: left;
+}
+.upcoming-meetups {
+	height: max-content;
+	border-left: 3px solid teal;
+}
+
+
+.view-more{
+	margin: 40px auto;
+}
+
+.view-more div{
+	padding: 16px;
+	width: 200px;
+	margin: 10px auto;
+}
+
+.avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 5px 15px;
+	border: 1px solid teal;
+}
+.avatar-profile {
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	border: 3px solid white;
+	margin-top: -120px;
+}
+
+.avatar > p {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	padding: 12px;
+}
+
+.avatar-profile > p {
+	font-size: 6em;
+}
+
+
+
+/* User Profile */
+.profile-wrapper header {
+	height: 200px;
+}
+.user-stats ul {
+	width: 300px;
+	margin: auto;
+}
+
+.user-stats a:hover {
+	color: white;
+}
+
+.user-contact-details {
+	margin-left: 100px;
+}
+
+.sidebar-item {
+	margin: 60px auto;
+}
+
+.sidebar-item a:hover {
+	color: teal;
+}
+
+.control {
+	padding: 4px 10px;
+	margin-top: 10px;
+	font-size: large;
+}
+.alert-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.4);
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.alert {
+	width: 400px;
+	overflow-y: auto;
+	padding: 70px 20px;
+}
+
+.alert-icon {
+	font-size: 3rem !important;
+}
+
+.alert-text {
+	font-size: 1.4rem;
+	padding: 10px 15px;
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>User Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/app.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/form.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/utility.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/media-queries.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar" id="navbar-desktop">
+      <div class="page-title text-heavy">
+        <a href="index.html"><h3>Questioner</h3></a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li>
+            <a href="meetups.html"><span class="fa fa-meetup"></span>Meetups</a>
+          </li>
+          <li>
+            <a href="user-profile.html"><span class="fa fa-user"></span>Profile</a>
+          </li>
+          <li>
+            <a href="login.html"><span class="fa fa-sign-out"></span>Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="flex bg-primary flex-row space-between pr-1 nav-mobile-parent text-white">    
+      <a href="#" id="nav-toggle" class="no-repeat h-0"></a>
+      <div class="m-0 h-0">
+        <a href="index.html" class="text-white"><p>Questioner</p></a>
+      </div>
+      <div class="text-white m-0 h-0">
+        <a href="login.html" class="text-white"><p>Sign in</p></a>
+      </div>
+    </div>
+    
+    <nav class="navbar-collapse" id="navbar-mobile">
+          <ul class="flex flex-column text-left p-1">
+            <li class="mt-1">
+              <a href="login.html"><span class="fa fa-sign-in" style="margin-right:10px;"></span>Login</a>
+            </li> 
+            <li class="mt-1">
+              <a href="register.html"><span class="fa fa-user-plus" style="margin-right:10px;"></span>Sign up</a>
+            </li>
+          </ul>
+    </nav>
+    <div class="profile-wrapper">
+      <header class="bg-black p-1 upper">
+      </header>
+      <div class="user-stats p-1 bg-white flex flex-row space-between">
+        <ul class="flex space-between">
+          <li class="stat flex flex-column text-center"><span class="text-small text-primary">Questions</span><span class="text-heavy">20</span></li>
+          <li class="stat flex flex-column text-center"><span class="text-small text-primary">Comments</span><span class="text-heavy">20</span></li>
+          <li class="stat flex flex-column text-center"><span class="text-small text-primary">Likes</span><span class="text-heavy">20</span></li>
+          <li class="stat flex flex-column text-center"><span class="text-small text-primary">Meetups</span><span class="text-heavy">3</span></li>
+        </ul>
+        <p class="mt-1"><a href="edit-profile.html" class="bg-primary br-20 p-1 text-white">Edit Profile</a></p>
+      </div>
+      <section class="profile-content flex">
+        <div class="user-contact-details">
+          <div class="avatar-profile bg-black">
+            <p class="text-center text-white">ID</p>
+          </div>
+          <div class="list text-left">
+            <p class="fs-20 mt-05">Igbominadeveloper</p>
+            <p class="text-light mt-05"><i class="fa fa-phone"></i>+2348135586949</p>
+            <p class="text-light mt-05"><i class="fa fa-envelope"></i>favourafolayan@gmail.com</p>
+            <p class="text-light mt-05"><i class="fa fa-twitter"></i>igbominadeveloper</p>
+            <p class="text-light mt-05"><i class="fa fa-map-marker"></i>Lagos, Nigeria</p>
+          </div>
+          
+        </div>
+        <div class="question-feed card m-20">
+          <article>
+            <div class="question-title">
+              <h3 class="text-heavy">Top Questions - Laracon Nigeria</h3>
+            </div>
+            <div class="questions-list">  
+              <div class="question flex p-1 flex-column">
+                <div class="question-body flex">
+                  <div class="avatar bg-black">
+                    <p>ID</p>
+                  </div>
+          
+                  <div class="question-details">
+                    <div class="question-content">
+                      <div class="upper-details flex space-between">
+                        <p class="question-user"><a href="profile.html" class="text-black">Igbominadeveloper</a></p>
+                        <p class="text-light question-time"><i class="fa fa-clock-o"></i>2 months ago</p>
+                      </div>
+                      <p class="text-light mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda laborum
+                        cumque
+                        praesentium impedit obcaecati est eaque consectetur nisi tempore cupiditate?</p>
+                    </div>
+          
+                    <div class="question-stats flex space-between mt-1">
+                      <p class="comment text-light"><i class="fa fa-comment-o"></i>2</p>
+                      <p class="like text-light"><i class="fa fa-thumbs-o-up"></i>10</p>
+                      <p class="dislike text-light"><i class="fa fa-thumbs-o-down"></i>2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="question flex p-1 flex-column">
+                <div class="question-body flex">
+                  <div class="avatar bg-black">
+                    <p>ID</p>
+                  </div>
+          
+                  <div class="question-details">
+                    <div class="question-content">
+                      <div class="upper-details flex space-between">
+                        <p class="question-user"><a href="profile.html" class="text-black">Igbominadeveloper</a></p>
+                        <p class="text-light question-time"><i class="fa fa-clock-o"></i>2 months ago</p>
+                      </div>
+                      <p class="text-light mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda laborum
+                        cumque
+                        praesentium impedit obcaecati est eaque consectetur nisi tempore cupiditate?</p>
+                    </div>
+          
+                    <div class="question-stats flex space-between mt-1">
+                      <p class="comment text-light"><i class="fa fa-comment-o"></i>2</p>
+                      <p class="like text-light"><i class="fa fa-thumbs-o-up"></i>10</p>
+                      <p class="dislike text-light"><i class="fa fa-thumbs-o-down"></i>2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="question flex p-1 flex-column">
+                <div class="question-body flex">
+                  <div class="avatar bg-black">
+                    <p>ID</p>
+                  </div>
+          
+                  <div class="question-details">
+                    <div class="question-content">
+                      <div class="upper-details flex space-between">
+                        <p class="question-user"><a href="profile.html" class="text-black">Igbominadeveloper</a></p>
+                        <p class="text-light question-time"><i class="fa fa-clock-o"></i>2 months ago</p>
+                      </div>
+                      <p class="text-light mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda laborum
+                        cumque
+                        praesentium impedit obcaecati est eaque consectetur nisi tempore cupiditate?</p>
+                    </div>
+          
+                    <div class="question-stats flex space-between mt-1">
+                      <p class="comment text-light"><i class="fa fa-comment-o"></i>2</p>
+                      <p class="like text-light"><i class="fa fa-thumbs-o-up"></i>10</p>
+                      <p class="dislike text-light"><i class="fa fa-thumbs-o-down"></i>2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="upcoming-meetups m-20 p-1 bg-white card">
+          <p class="text-light">Filter question feed</p>
+          <ul class="m-0 p-1">
+            <form>
+              <li class="mt-05">
+                <input type="radio" name="meetups" value="devfest" class="form-input mr-5" />Dev Fest 2018
+              </li> 
+              <li class="mt-05">
+                <input type="radio" name="meetups" value="mocha" class="form-input mr-5" />Mocha Meetup
+              </li> 
+              <li class="mt-05">
+                <input type="radio" name="meetups" value="laracon" class="form-input mr-5" />Laracon Nigeria
+              </li>
+              <li class="mt-05">
+                <input type="radio" name="meetups" value="gdg" class="form-input mr-5" />Gdg Devfest
+              </li>
+              <li class="mt-05">
+                <input type="radio" name="meetups" value="vuejs" class="form-input mr-5" />Vue Ilorin
+              </li>
+             
+            </form>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-content flex text-white flex-row">
+        <div class="logo">
+          <div class="footer-groups flex flex-column">
+            <div class="footer-group-title">
+              Questioner Logo
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row space-between links">
+          <div class="footer-groups flex flex-column">
+            <div class="footer-group-title">
+              Questioner
+            </div>
+            <a href="#">
+              <p>About us</p>
+            </a>
+            <a href="#">
+              <p>How it works</p>
+            </a>
+            <a href="#">
+              <p>Contact us</p>
+            </a>
+          </div>
+          <div class="footer-groups flex flex-column">
+            <div class="footer-group-title">
+              Account
+            </div>
+            <a href="register.html">
+              <p>Sign up</p>
+            </a>
+            <a href="login.html">
+              <p>Sign in</p>
+            </a>
+            <a href="password-reset.html">
+              <p>Password reset</p>
+            </a>
+          </div>
+          <div class="footer-groups flex flex-column">
+            <div class="footer-group-title">
+              Quick Links
+            </div>
+            <a href="meetups.html">
+              <p>All meetups</p>
+              <a href="#">
+                <p>Upcoming</p>
+                <a href="#">
+                  <p>Latest</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright bg-white p-10">
+        <p class="text-center">Made with <i class="fa fa-heart text-danger"></i>by <a href="https://github.com/igbominadeveloper"
+            class="github">igbominadeveloper</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
