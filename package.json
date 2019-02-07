@@ -3,15 +3,13 @@
   "version": "1.0.0",
   "description": "A questions crowd-sourcing application",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
-    "body-parser": "^1.18.3",
-    "expect": "^23.6.0",
     "webpack": "^4.28.4"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "mocha"
   },
