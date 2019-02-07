@@ -1,5 +1,5 @@
 {
-  "name": "Questioner Application",
+  "name": "QuestionerApplication",
   "version": "1.0.0",
   "description": "A questions crowd-sourcing application",
   "main": "index.js",
@@ -11,6 +11,7 @@
     "webpack": "^4.28.4"
   },
   "scripts": {
+    "build": "webpack assets/js/**.js",
     "test": "mocha"
   },
   "repository": {

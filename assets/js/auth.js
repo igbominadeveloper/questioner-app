@@ -42,6 +42,7 @@ class Authentication{
             alertWrapper.classList.add('hide');
             form["password"].value = '';
           }, 2000);
+          return;
         }
         const user = response.data[0].user;
         const token = response.data[0].token;
