@@ -57,6 +57,7 @@ class Authentication{
           alertWrapper.innerHTML = successTemplate;
           setTimeout(() => {
             alertWrapper.classList.add('hide');
+            this.redirect();
           }, 2000);
       })
       .catch(error => console.log(error))
@@ -116,6 +117,7 @@ class Authentication{
             form["password"].value = '';
             form["password_confirmation"].value = '';
           }, 2000);
+          return;
         }
         const user = response.data[0].user;
         const token = response.data[0].token;
@@ -130,6 +132,7 @@ class Authentication{
           alertWrapper.innerHTML = successTemplate;
           setTimeout(() => {
             alertWrapper.classList.add('hide');
+            this.redirect();
           }, 2000);
       })
       .catch(error => console.log(error))
@@ -161,5 +164,13 @@ class Authentication{
     else if (this.getState()){
       return true;
     }
+  }
+  
+  static redirect() {
+    let user = this.getState().user;
+    user = JSON.parse(""+user+"");
+    const adminUrl = '/meetups-list-table.html';
+    const userUrl = '/user-profile.html';
+    user.isadmin ? window.location.pathname = adminUrl : window.location.pathname = userUrl;
   }
 }
