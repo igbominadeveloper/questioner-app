@@ -289,36 +289,6 @@ form input[type="search"] {
 	display: flex;
 }
 
-#gdg {
-	background: url('../images/gdg.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#vue{
-	background: url('../images/meetup-logo.png');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#laravel {
-	background: url('../images/laravel.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#mocha {
-	background: url('../images/mocha.svg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#forloop {
-	background: url('../images/forloop.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
 .text-light{
 	font-weight: lighter;
 }

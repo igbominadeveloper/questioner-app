@@ -194,6 +194,11 @@
 	color: teal;
 }
 
+.img-fluid {
+	height: 100%;
+	width: 100%;
+}
+
 .cover-no-repeat {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
