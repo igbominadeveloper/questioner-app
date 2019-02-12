@@ -45,10 +45,10 @@ table {
 footer {
 	background:rgb(240, 240, 240);
 	font-size: 20px;
-	align-items: center;
-  justify-content: space-around;
 	text-align: left;
 	margin-top:60px;
+	width: 100%;
+	bottom: 0;
 }
 
 div.footer-groups p {
