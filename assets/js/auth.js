@@ -57,7 +57,7 @@ class Authentication{
           alertWrapper.innerHTML = successTemplate;
           setTimeout(() => {
             alertWrapper.classList.add('hide');
-            this.redirect();
+            this.loadDashboard();
           }, 2000);
       })
       .catch(error => console.log(error))
@@ -132,7 +132,7 @@ class Authentication{
           alertWrapper.innerHTML = successTemplate;
           setTimeout(() => {
             alertWrapper.classList.add('hide');
-            this.redirect();
+            this.loadDashboard();
           }, 2000);
       })
       .catch(error => console.log(error))
@@ -161,16 +161,22 @@ class Authentication{
     if(this.getState() === ''){
       return false;
     }
-    else if (this.getState()){
-      return true;
-    }
+    return true;
   }
   
-  static redirect() {
-    let user = this.getState().user;
-    user = JSON.parse(""+user+"");
-    const adminUrl = '/meetups-list-table.html';
-    const userUrl = '/user-profile.html';
-    user.isadmin ? window.location.pathname = adminUrl : window.location.pathname = userUrl;
+  static loadDashboard() {
+    if(this.isLoggedIn()) {
+      let user = this.getState().user;
+      user = JSON.parse(""+user+"");
+      const adminUrl = '/meetups-list-table.html';
+      const userUrl = '/user-profile.html';
+      user.isadmin ? this.redirect(adminUrl) : this.redirect(userUrl);
+      return;
+    }
+    window.location.pathname = '/login.html';
+  }
+  
+  static redirect(path) {
+    return window.location.pathname = path;
   }
 }

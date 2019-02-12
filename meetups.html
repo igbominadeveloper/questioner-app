@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/media-queries.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onload="Authentication.isLoggedIn(); Meetup.all()">
   <div class="container-fluid">
     <nav class="navbar" id="navbar-desktop">
       <div class="page-title text-heavy">
@@ -120,7 +120,11 @@
             class="github">igbominadeveloper</a></p>
       </div>
     </footer>
+    <div class="alert-wrapper flex center items-center hide">
+    </div>
   </div>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/meetup.js"></script>
 </body>
 </html>
