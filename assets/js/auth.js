@@ -1,7 +1,7 @@
 // const apiDomain = 'https://questioner-api.herokuapp.com/api/v1';
-const apiDomain = 'http://localhost:3000/api/v1';
-const alertWrapper = document.querySelector('.alert-wrapper');
-let response;
+var apiDomain = 'http://localhost:3000/api/v1';
+var alertWrapper = document.querySelector('.alert-wrapper');
+var response;
 /**
  * Handle authentication and authorization
  * Login and register new accounts
@@ -30,7 +30,7 @@ class Authentication{
     .then(response => response.json())
       .then(response => {
         if(response.error){
-          const errorTemplate = `
+          var errorTemplate = `
             <div class="alert card">
               <i class="alert-icon fa fa-warning text-danger p-20"></i>
               <p class="alert-text text-primary">${ response.error }</p>
@@ -46,7 +46,7 @@ class Authentication{
         }
         const user = response.data[0].user;
         const token = response.data[0].token;
-        const successTemplate = `
+        var successTemplate = `
             <div class="alert card">
               <i class="alert-icon fa fa-check text-primary p-20"></i>
               <p class="alert-text text-primary">Welcome back ${ user.firstname} ${ user.lastname }</p>
@@ -158,8 +158,8 @@ class Authentication{
   }
 
   static isLoggedIn() {
-    if(this.getState() === ''){
-      return false;
+    if(this.getState().token === null){
+      return false
     }
     return true;
   }
