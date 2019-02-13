@@ -103,8 +103,8 @@ class Meetup {
             <div class="organizer">
               <div class="avatar bg-black"><p>${data.organizer_name.charAt(0)}</p></div>
               <div class="contact-details">
-                <p class="text-light">Organised by <a href="profile.html" class="text-black">${data.organizer_name}</a></p>
-                <p class="text-light"><i class="fa fa-phone"></i>${data.organizer_phone}</p>
+                <p class="text-light">Organised by <span class="text-black">${data.organizer_name}</span></p>
+                <p class="text-light"><i class="fa fa-phone"></i><a href="tel:${data.organizer_phone}">${data.organizer_phone}</a></p>
                 <p class="text-light"><i class="fa fa-envelope"></i><a href="mailto:${data.organizer_email}">${data.organizer_email}</a></p>
               </div>
             </div>
