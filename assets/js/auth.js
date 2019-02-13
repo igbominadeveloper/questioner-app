@@ -177,6 +177,9 @@ class Authentication{
   }
   
   static redirect(path) {
-    return window.location.pathname = path;
+    const url = new URL(location.href);
+    url.search = '';
+    url.pathname = path;
+    return window.location.href = url.pathname;
   }
 }

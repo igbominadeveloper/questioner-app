@@ -69,8 +69,8 @@ class Meetup {
     })
       .then(response => response.json())
       .then(response => {
-        if (response.error) {
-          return this.errorTemplate(response.error);
+        if (response.status === 404) {
+          Authentication.redirect('/meetups.html');
         }
         let meetupData = response.data[0];
         let template = this.singleMeetup(meetupData);
