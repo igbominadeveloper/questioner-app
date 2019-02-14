@@ -51,6 +51,11 @@ class Meetup {
     .catch(error => console.log(error))
   }
 
+  /**
+   * find a single meetup
+   * 
+   * @param {String} param 
+   */
   static find(param) {
     let id = parseInt(param.replace(/[?=a-z]+/g,''));
     let token;
@@ -79,6 +84,24 @@ class Meetup {
       .catch(error => console.log(error))
     
   }
+  /**
+   * send POST request
+   * 
+   * @param {Object} payload
+   * @return {Object} meetup
+   */
+  static createMeetup(payload) {
+
+     
+  }
+
+  /**
+   * generate markup for meetup grid items
+   * 
+   * @param {Object} data 
+   * @param {Number} index
+   * @return {String}  
+   */
 
   static meetupGridItem(data, index) {
     return `
@@ -95,6 +118,13 @@ class Meetup {
       `;
   }
 
+  /**
+   * generate markup for a single meetup view
+   * 
+   * @param {Object} data 
+   * @param {Number} index
+   * @return {String}  
+   */
   static singleMeetup(data) {
     return `
       <div class="meetup-header">
@@ -382,7 +412,11 @@ class Meetup {
       </section>
     `;
   }
-
+  /**
+   * return template for an error response
+   * 
+   * @param {Object} error 
+   */
   static errorTemplate(error) {
     const errorTemplate = `
           <div class="alert card">
