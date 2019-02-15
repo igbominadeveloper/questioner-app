@@ -412,6 +412,7 @@ class Meetup {
       </section>
     `;
   }
+  
   /**
    * return template for an error response
    * 
