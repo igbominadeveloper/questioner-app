@@ -91,7 +91,13 @@ class Meetup {
    * @return {Object} meetup
    */
   static createMeetup(payload) {
-
+    let token;
+    if (Authentication.isLoggedIn() && Authentication.getState().token) {
+      token = Authentication.getState().token;
+    }
+    else {
+      Authentication.redirect('/login.html');
+    }
      
   }
 
@@ -168,7 +174,6 @@ class Meetup {
             <h3 class="text-heavy">Questions</h3>
           </div>
           <div class="questions-list">
-
             <div class="question flex p-1 flex-column">
               <div class="question-body flex">
                 <div class="avatar bg-black">
@@ -401,7 +406,10 @@ class Meetup {
               <div class="new-question">
                 <form action="" id="question-form" class="flex flex-column">
                   <div class="form-group">
-                    <textarea class="form-control" name="question" id="question" placeholder="Your Question"></textarea>
+                    <input class="form-control" name="title" placeholder="title" />
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="body" id="question" placeholder="Your Question"></textarea>
                   </div>
                   <button class="btn-primary p-1 shadow">post</button>
                 </form>
